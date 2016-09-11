@@ -45,16 +45,23 @@ Sep 11 13:54:54 matrix.local sudo[1247]: pam_unix(sudo:session): session opened 
 # Usage
 
 ```
-python2 ./display.py line_1~line_2~line_3~line_4
+sudo python2 ./display.py line_1~line_2~line_3~line_4
 ```
 
 or clock demo:
 
 
 ```
-python2 ./datetime-test.py
+sudo python2 ./datetime-test.py
+```
+
+or monitoring:
+
+```
+sudo python2 ./monitor.py
 ```
 
 ### Based on
+*  Forked from https://github.com/sweetpi/python-i2c-lcd
 *  https://github.com/pimatic/pimatic/issues/271
 *  http://www.gejanssen.com/howto/i2c_display_2004_raspberrypi/index.html
