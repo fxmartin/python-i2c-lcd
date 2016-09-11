@@ -1,0 +1,11 @@
+[Unit]
+Description=LCD display
+
+[Service]
+Type=simple
+Restart=onAbort
+ExecStart=/usr/bin/lcd-panel.sh
+ExecStop=/usr/bin/lcd-panel-stop.sh
+
+[Install]
+WantedBy=multi-user.target
