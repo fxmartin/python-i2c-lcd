@@ -2,8 +2,8 @@ import i2c_lib
 from time import sleep
 
 # LCD Address
-#ADDRESS = 0x3F
-ADDRESS = 0x27
+ADDRESS = 0x3F
+#ADDRESS = 0x27
 
 # I2C bus
 BUS = 1
@@ -111,6 +111,10 @@ class lcd:
   def backlight_off(self):
     """turn off backlight, anything that calls write turns it on again"""
     self.device.write_cmd(LCD_NOBACKLIGHT)
+
+  def backlight_on(self):
+    """turn off backlight, anything that calls write turns it on again"""
+    self.device.write_cmd(LCD_BACKLIGHT)
 
   def display_off(self):
     """turn off the text display"""
